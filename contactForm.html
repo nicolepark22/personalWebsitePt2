@@ -31,7 +31,7 @@
 
         <main id="mainContact">
             <div class="formWrapper">
-                <form class="signupForm" action="">
+                <form class="signupForm" action="./submitMsg.html">
                     <div class="formHeader">
                         <h1>Contact Me</h1>
                     </div>
@@ -46,20 +46,63 @@
                                 <input type="text" />
                             </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="inputGroup">
+                                <label for="">Email</label>
+                                <input type="email" name="" id="" />
+                            </div>
+                        </div>
 
-                    <div class="row">
-                        <div class="inputGroup">
-                            <label for="">Email</label>
-                            <input type="email" name="" id="" />
+                        <div class="row">
+                            <div class="inputGroup">
+                                <label>Comments</label>
+                                <textarea></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="inputGroup">
+                                <label>Gender</label>
+                                <div class="radioGroup">
+                                    <div>
+                                        <label>
+                                            <input type="radio" name="gender" />
+                                            Male
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <label>
+                                            <input type="radio" name="gender" />
+                                            Female
+                                        </label>
+                                    </div>
+
+                                    <div>
+                                        <label>
+                                            <input type="radio" name="gender" />
+                                            Other
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inputGroup">
+                                <label>Hobbies</label>
+                                <select>
+                                    <option disabled selected hidden value></option>
+                                    <option>Reading</option>
+                                    <option>Traveling</option>
+                                    <option>Cooking</option>
+                                    <option>Gardening</option>
+                                    <option>Meditation</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="inputGroup">
-                            <label for="">Comments</label>
-                            <input type="text" name="" id="" />
-                        </div>
+                    <div class="formFooter">
+                        <button class="btn">Contact Me</button>
                     </div>
                 </form>
             </div>
