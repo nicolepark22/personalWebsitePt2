@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #b4cded;
+    font-family: "Ubuntu", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    height: 55px;
+    width: 100%;
+    background-color: #0b2027;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    font-family: "Ubuntu", sans-serif;
+}
+
+nav {
+    float: right;
+}
+nav > a {
+    color: #f0f4ef;
+    padding: 15px;
+    font-size: 25px;
+    margin: 0 10px;
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#name {
+    color: #f0f4ef;
+    padding: 15px;
+    font-size: 12px;
+    margin-left: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: normal;
+}
+
+#contentWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 600px auto;
+}
+#profileBanner {
+    display: flex;
+    margin-bottom: 80px;
+}
+#homePicWrapper {
+    width: 200px;
+    height: 100px;
+}
+#homePic {
+    position: relative;
+    top: -400px;
+    left: -25px;
+    width: 450px;
+    height: 500px;
+    /* border: 20px solid #344966; */
+    border-radius: 50%;
+    box-shadow: 0 0 0 7px #bfcc94, 0 0 0 25px #344966;
+}
+
+.center-text {
+    font-size: 30px;
+    color: #344966;
+    line-height: 1.4;
+}
+
+#heading {
+    font-size: 60px;
+}
+
+#quote {
+    font-size: 75px;
+    color: #344966;
+    font-family: "Grand Hotel", cursive;
+    margin: 10px 0;
+    text-align: right;
+}
+
+#quoteAuthor {
+    font-size: 55px;
+    text-align: right;
+    margin-right: 6rem;
+    line-height: 1.5;
+}
+
+main {
+    /* display: block; */
+    width: 60%;
+    min-height: 100vh;
+    margin: auto;
+    background-color: #344966;
+    padding: 85px 24px 96px;
+}
+
+hr {
+    border: none;
+    border-top: 3px dotted #bfcc94;
+    color: #bfcc94;
+    background-color: #f0f4ef;
+    height: 1px;
+    margin: 20px 0;
+}
+
+#aboutMeHeader {
+    color: #bfcc94;
+    font-size: 60px;
+}
+
+.aboutMeSection {
+    color: #bfcc94;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+}
+
+.aboutMeSection img {
+    height: 150px;
+    width: 225px;
+    float: right;
+    margin: 10px 25px;
+    border: 3px solid #0b2027;
+}
+
+#mainPortfolio {
+    width: 85%;
+    min-height: 100vh;
+    margin: auto;
+    background-color: #344966;
+    padding: 35px 24px 96px;
+}
+
+#portfolioHeader {
+    font-size: 60px;
+    color: #bfcc94;
+}
+
+.myProjects {
+    display: flex;
+    justify-content: space-around;
+    background-color: #344966;
+}
+
+.myProjects > div {
+    background-color: #bfcc94;
+    color: #344966;
+    width: 450px;
+    margin: 10px;
+    text-align: center;
+    height: 700px;
+    font-size: 25px;
+    padding: 15px;
+    border: 3px solid #0b2027;
+}
+
+.portfolioPic {
+    height: 150px;
+    width: 200px;
+    border: 3px solid #0b2027;
+    margin-top: 10px;
+}
+
+#mainContact {
+    width: 60%;
+    min-hexight: 100vh;
+    margin: auto;
+    background-color: #344966;
+    padding: 35px 24px 96px;
+}
+
+.formWrapper {
+    display: flex;
+    justify-content: center;
+    align-item: center;
+    height: 100vh;
+}
+.signupForm {
+    background-color: #b4cded;
+    max-width: 600px;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.formHeader {
+    border-bottom: 10px solid #0b2027
+    padding: 15px 0;
+}
+
+.formHeader h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #0b2027
+}
+
+.formBody {
+    background-color: #f0f4ef;
+    padding: 5px 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.inputGroup {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+}
+
+label {
+    color: #0b2027;
+    font-size: 17px;
+}
+
+input[type="text"], 
+input[type="email"] {
+    width: 100%;
+    font-size: 18px;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:#0b2027;
+    border: 1px solid #0b2027;
+    border-radius: 4px;
+    background: white;
+    outline: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .myProjects {
+        flex-direction: column;
+
+    }
+} 
