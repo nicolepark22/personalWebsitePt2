@@ -12,24 +12,29 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet" />
 
-        <script src="index.js"></script>
-        <!-- <link rel="stylesheet" href="style.css" /> -->
+        <!-- <script src="index.js"></script> -->
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <header>
-            <div id="name">
-                <h1>Nicole Park</h1>
-            </div>
-            <nav>
-                <a href="home.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contactForm.html">Contact</a>
-            </nav>
-        </header>
+        <nav class="navbar">
+            <div class="myName">Nicole Park</div>
+            <a href="#" class="toggleButton">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
 
-        <main id="mainContact">
+            <div class="navbarLinks">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contactForm.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
             <div class="formWrapper">
                 <form class="signupForm" action="./submitMsg.html">
                     <div class="formHeader">
@@ -39,17 +44,17 @@
                         <div class="row">
                             <div class="inputGroup">
                                 <label for="">First Name</label>
-                                <input type="text" />
+                                <input type="text" required />
                             </div>
                             <div class="inputGroup">
                                 <label for="">Last Name</label>
-                                <input type="text" />
+                                <input type="text" required />
                             </div>
                         </div>
                         <div class="row">
                             <div class="inputGroup">
                                 <label for="">Email</label>
-                                <input type="email" name="" id="" />
+                                <input type="email" name="" id="" required />
                             </div>
                         </div>
 

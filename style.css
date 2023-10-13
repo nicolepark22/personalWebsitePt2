@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #b4cded;
     font-family: "Ubuntu", sans-serif;
 }
@@ -11,6 +11,8 @@ body {
     box-sizing: border-box;
 }
 
+/* NAVBAR Items */
+
 .navbar {
     display: flex;
     position: relative;
@@ -18,7 +20,6 @@ body {
     align-items: center;
     background-color: #0b2027;
     color: #f0f4ef;
-    /* height: 5rem; */
 }
 
 .myName {
@@ -34,7 +35,6 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    
 }
 
 .navbarLinks li {
@@ -70,39 +70,8 @@ body {
     background-color: #f0f4ef;
     border-radius: 10px;
 }
-/* header {
-    height: 55px;
-    width: 100%;
-    background-color: #0b2027;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    font-family: "Ubuntu", sans-serif;
-}
 
-nav {
-    float: right;
-}
-nav > a {
-    color: #f0f4ef;
-    padding: 15px;
-    font-size: 25px;
-    margin: 0 10px;
-    text-decoration: none;
-    vertical-align: middle;
-    display: inline-block;
-} */
-
-#name {
-    color: #f0f4ef;
-    padding: 15px;
-    font-size: 12px;
-    margin-left: 10px;
-    vertical-align: middle;
-    display: inline-block;
-    font-weight: normal;
-}
+/* Home Page */
 
 #contentWrapper {
     display: flex;
@@ -115,20 +84,6 @@ nav > a {
     display: flex;
     margin-bottom: 80px;
 }
-#homePicWrapper {
-    width: 200px;
-    height: 100px;
-}
-#homePic {
-    position: relative;
-    top: -400px;
-    left: -25px;
-    width: 450px;
-    height: 500px;
-    /* border: 20px solid #344966; */
-    border-radius: 50%;
-    box-shadow: 0 0 0 7px #bfcc94, 0 0 0 25px #344966;
-}
 
 .center-text {
     font-size: 30px;
@@ -138,6 +93,22 @@ nav > a {
 
 #heading {
     font-size: 60px;
+}
+
+#homePicWrapper {
+    width: 200px;
+    height: 100px;
+}
+
+#homePic {
+    position: relative;
+    top: -400px;
+    left: -25px;
+    width: 25rem;
+    height: 28rem;
+    /* border: 20px solid #344966; */
+    border-radius: 50%;
+    box-shadow: 0 0 0 7px #bfcc94, 0 0 0 21px #344966;
 }
 
 #quote {
@@ -155,14 +126,16 @@ nav > a {
     line-height: 1.5;
 }
 
+/* About Page */
+
 main {
-    /* display: block; */
     width: 60%;
     min-height: 100vh;
     margin: auto;
     background-color: #344966;
-    padding: 85px 24px 96px;
+    padding: 35px 24px 35px;
 }
+
 
 hr {
     border: none;
@@ -192,16 +165,17 @@ hr {
     border: 3px solid #0b2027;
 }
 
+
 #mainPortfolio {
     width: 85%;
     min-height: 100vh;
     margin: auto;
     background-color: #344966;
-    padding: 35px 24px 96px;
+    padding: 35px 24px 35px;
 }
-
 #portfolioHeader {
-    font-size: 60px;
+    display: flex;
+    font-size: 1.75rem;
     color: #bfcc94;
 }
 
@@ -217,7 +191,7 @@ hr {
     width: 450px;
     margin: 10px;
     text-align: center;
-    height: 700px;
+    min-height: 700px;
     font-size: 25px;
     padding: 15px;
     border: 3px solid #0b2027;
@@ -228,14 +202,6 @@ hr {
     width: 200px;
     border: 3px solid #0b2027;
     margin-top: 10px;
-}
-
-#mainContact {
-    width: 60%;
-    min-hexight: 100vh;
-    margin: auto;
-    background-color: #344966;
-    padding: 35px 24px 96px;
 }
 
 .formWrapper {
@@ -334,9 +300,22 @@ textarea {
     font-family: "Ubuntu", sans-serif;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
+    main {
+        width: 100%;
+    }
+
+    #mainPortfolio {
+        width: 100%;
+    }
+
+    #portfolioHeader {
+        justify-content: center;
+    }
+    
     .myProjects {
         flex-direction: column;
+        align-items: center;
     }
 
     /* media queries for the contact form */
@@ -351,6 +330,12 @@ textarea {
     }
 
     /* media queries for the navbar */
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
     .toggleButton {
         display: flex;
     }
@@ -360,21 +345,31 @@ textarea {
         width: 100%;
     }
 
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
     .navbarLinks ul {
         width: 100%;
         flex-direction: column;
     }
 
-    .navbarLinks li {
+    .navbarLinks ul li {
         text-align: center;
     }
 
-    .navbarLinks li a {
-        padding: 0.5rem 1rem;
+    .navbarLinks ul li a {
+        padding: .5rem 1 rem;
+    }
+
+    navbar-links.active {
+        display: flex;
+    }
+
+    /* media querie for home page image */
+
+    #homePicWrapper {
+        flex-direction: column;
+    }
+
+    #profileBanner {
+        flex-direction: column;
+        position: absolute;
     }
 }
