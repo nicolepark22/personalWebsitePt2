@@ -105,8 +105,6 @@ body {
     top: -400px;
     left: -25px;
     width: 25rem;
-    height: 28rem;
-    /* border: 20px solid #344966; */
     border-radius: 50%;
     box-shadow: 0 0 0 7px #bfcc94, 0 0 0 21px #344966;
 }
@@ -136,7 +134,6 @@ main {
     padding: 35px 24px 35px;
 }
 
-
 hr {
     border: none;
     border-top: 3px dotted #bfcc94;
@@ -165,6 +162,7 @@ hr {
     border: 3px solid #0b2027;
 }
 
+/* Portfolio Page */
 
 #mainPortfolio {
     width: 85%;
@@ -173,6 +171,7 @@ hr {
     background-color: #344966;
     padding: 35px 24px 35px;
 }
+
 #portfolioHeader {
     display: flex;
     font-size: 1.75rem;
@@ -204,14 +203,17 @@ hr {
     margin-top: 10px;
 }
 
+/* Contact Page */
+
 .formWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+
 .signupForm {
-    background-color: #b4cded;
+    background-color: #bfcc94;
     max-width: 600px;
     flex: 1;
     border-radius: 10px;
@@ -224,7 +226,7 @@ hr {
 
 .formHeader h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     color: #0b2027;
 }
 
@@ -246,7 +248,7 @@ hr {
 
 label {
     color: #0b2027;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 input[type="text"],
@@ -301,9 +303,36 @@ textarea {
 }
 
 @media only screen and (max-width: 900px) {
+    /* media querie for home page image */
+
+    #profileBanner {
+        flex-wrap: wrap-reverse;
+    }
+
+    #contentWrapper {
+        margin: 80px auto;
+    }
+
+    #homePicWrapper {
+        width: 100%;
+        height: unset;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    #homePic {
+        width: 15rem;
+        top: 0;
+        right: 0;
+        position: unset;
+    }
+
+    /* media queries for about and contact pg */
+
     main {
         width: 100%;
     }
+    /* media queries for portfolio page */
 
     #mainPortfolio {
         width: 100%;
@@ -312,7 +341,7 @@ textarea {
     #portfolioHeader {
         justify-content: center;
     }
-    
+
     .myProjects {
         flex-direction: column;
         align-items: center;
@@ -330,12 +359,12 @@ textarea {
     }
 
     /* media queries for the navbar */
-    
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .toggleButton {
         display: flex;
     }
@@ -355,21 +384,10 @@ textarea {
     }
 
     .navbarLinks ul li a {
-        padding: .5rem 1 rem;
+        padding: 0.5rem 1 rem;
     }
 
-    navbar-links.active {
+    .navbarLinks.active {
         display: flex;
-    }
-
-    /* media querie for home page image */
-
-    #homePicWrapper {
-        flex-direction: column;
-    }
-
-    #profileBanner {
-        flex-direction: column;
-        position: absolute;
     }
 }
